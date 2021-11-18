@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_biki_biki,biki.biki,model_biki_biki,base.group_user,1,1,1,1
-access_biki_egoera,egoera,biki.egoera,base.group_user,1,1,1,1
