@@ -23,7 +23,6 @@
         </field>
     </record>
 
-
     <menuitem id="menu_biki"
         name="Biki Digitala"
         groups="base.group_user"
