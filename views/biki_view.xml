@@ -4,15 +4,22 @@
     <menuitem
         id="menu_biki_root"
         name="Biki"
-        groups="base.group_user"
-        web_icon="point_of_sale,static/description/icon.png"
+        groups="biki.biki_user_group"
+        web_icon="biki/description/icon.png"
+        sequence="10"/>
+
+    <!-- Biki gordinen menua -->
+    <menuitem
+        id="menu_biki_gordinak"
+        name="Datu Gordinak"
+        parent="menu_biki_root"
         sequence="20"/>
 
     <!-- Konfigurazioko menu nagusia -->
     <menuitem id="menu_biki_config"
         name="Konfigurazioa"
         parent="menu_biki_root"
-        sequence="100"
-        groups="base.group_user"/>
+        sequence="110"
+        groups="biki.biki_user_group"/>
 
 </odoo>

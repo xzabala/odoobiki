@@ -29,8 +29,12 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/biki_orokorra_view.xml',
+        'views/biki_view.xml',
         'views/biki_egoera_view.xml',
+        'views/biki_emaitza_view.xml',
+        'views/biki_lagina_view.xml',
+        'views/biki_programa_view.xml',
+        'views/biki_totala_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="biki_egoera_tree" model="ir.ui.view">
-        <field name="name">biki.egoera.NumEstado</field>
+        <field name="name">Biki egoerak bista</field>
         <field name="model">biki.egoera</field>
         <field name="arch" type="xml">
-                <tree string="Idea list">
-                     <field name="NumEstado"/>
-                </tree>
+            <tree string="Idea list">
+                <field name="NumEstado"/>
+                <field name="CeroRefCompletado"/>
+                <field name="BuscarCeroRef"/>
+                <field name="EnMarcha"/>
+                <field name="RestablecerTrasParada"/>
+                <field name="MarchaExt"/>
+                <field name="StopBajandoExt"/>
+                <field name="StopExt"/>
+                <field name="FuncAnomalo"/>
+                <field name="PosInicialCompletado"/>
+                <field name="SeleccionarProg"/>
+                <field name="CrearPrograma"/>
+                <field name="NProgSeleccionado"/>
+                <field name="HomeExt"/>
+                <field name="ResetAlarma"/>
+                <field name="GrabarPrograma"/>
+                <field name="ConfirmarRunExt"/>
+                <field name="SalirModo"/>
+                <field name="JogExt"/>
+                <field name="JogUpSlow"/>
+                <field name="JogDownSlow"/>
+                <field name="JogUpFast"/>
+                <field name="JogDownFast"/>
+                <field name="CargarProg"/>
+                <field name="CondicionesIniciales"/>
+                <field name="MarchaExtActivada"/>
+                <field name="EmergenciaActiva"/>
+                <field name="EtapaActiva"/>
+            </tree>
 
         </field>
     </record>
@@ -18,20 +45,15 @@
         <field name="view_id" ref="biki_egoera_tree"/>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
-                Makinatinaren egoeren laginak
+                Makinen egoeren laginak
             </p>
         </field>
     </record>
 
-    <menuitem id="menu_biki"
-        name="Biki Digitala"
-        groups="base.group_user"
-        sequence="0"/>  
-
     <menuitem id="menu_biki_egoerak"
-        name="Makinaren egoerak"
-        parent="menu_biki_root"
+        name="Egoerak"
+        parent="menu_biki_gordinak"
         action="action_biki_show_egoerak"
-        groups="base.group_user"
-        sequence="0"/>
+        groups="biki.biki_user_group"
+        sequence="21"/>
 </odoo>

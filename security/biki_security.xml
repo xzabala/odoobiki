@@ -5,5 +5,9 @@
         <field name="name">Biki Erabiltzaileak</field>
         <field name="comment">Biki aplikazioaren erabiltzaile arruntak</field>
     </record>
+    <record id="biki_admin_group" model="res.groups">
+        <field name="name">Biki Administratzaileak</field>
+        <field name="comment">Biki aplikazioaren erabiltzaile aurreratuak</field>
+    </record>
 </data>
 </odoo>

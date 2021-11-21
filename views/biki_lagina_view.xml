@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="biki_lagina_tree" model="ir.ui.view">
+        <field name="name">Biki laginen bista</field>
+        <field name="model">biki.lagina</field>
+        <field name="arch" type="xml">
+            <tree string="Idea list">
+                <field name="NumMuestra"/>
+                <field name="PosicionCana"/>
+                <field name="VelocidadCana"/>
+                <field name="ConsignaVelocidad"/>
+                <field name="FuerzaRealizada"/>
+            </tree>
+
+        </field>
+    </record>
+
+    <record id="action_biki_show_laginak" model="ir.actions.act_window">
+        <field name="name">Makinaren laginen zerrenda</field>
+        <field name="res_model">biki.lagina</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="biki_lagina_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Makinen laginak
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_biki_laginak"
+        name="Laginak"
+        parent="menu_biki_gordinak"
+        action="action_biki_show_laginak"
+        groups="biki.biki_user_group"
+        sequence="21"/>
+</odoo>

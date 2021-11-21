@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="biki_emaitza_tree" model="ir.ui.view">
+        <field name="name">Biki emaitzen bista</field>
+        <field name="model">biki.emaitza</field>
+        <field name="arch" type="xml">
+            <tree string="Idea list">
+                <field name="NumPrograma"/>
+                <field name="TipoPrograma"/>
+                <field name="Ok"/>
+                <field name="Ng"/>
+                <field name="ResulSPAS"/>
+                <field name="ResulSTAE"/>
+                <field name="PosContacto"/>
+                <field name="PosFinal"/>
+                <field name="CargaFinal"/>
+                <field name="TiempoCiclo"/>
+            </tree>
+
+        </field>
+    </record>
+
+    <record id="action_biki_show_emaitzak" model="ir.actions.act_window">
+        <field name="name">Makinaren emaitzen zerrenda</field>
+        <field name="res_model">biki.emaitza</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="biki_emaitza_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Makinen emaitzen laginak
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_biki_emaitzak"
+        name="Emaitzak"
+        parent="menu_biki_gordinak"
+        action="action_biki_show_emaitzak"
+        groups="biki.biki_user_group"
+        sequence="21"/>
+</odoo>

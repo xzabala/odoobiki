@@ -1,2 +1,11 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_egoera,access.egoera,model_biki_egoera,biki_user_group,1,1,1,1
+access_egoera,access.egoera,model_biki_egoera,biki_user_group,1,0,0,0
+access_emaitza,access.emaitza,model_biki_emaitza,biki_user_group,1,0,0,0
+access_lagina,access.lagina,model_biki_lagina,biki_user_group,1,0,0,0
+access_programa,access.pograma,model_biki_programa,biki_user_group,1,0,0,0
+access_totala,access.totala,model_biki_totala,biki_user_group,1,0,0,0
+access_egoera,access.egoera,model_biki_egoera,biki_admin_group,1,1,1,1
+access_emaitza,access.emaitza,model_biki_emaitza,biki_admin_group,1,1,1,1
+access_lagina,access.lagina,model_biki_lagina,biki_admin_group,1,1,1,1
+access_programa,access.pograma,model_biki_programa,biki_admin_group,1,1,1,1
+access_totala,access.totala,model_biki_totala,biki_admin_group,1,1,1,1
