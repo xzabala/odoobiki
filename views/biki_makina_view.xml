@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Makinen bista -->
+    <record id="biki_makina_tree" model="ir.ui.view">
+        <field name="name">Biki makinen bista</field>
+        <field name="model">biki.makina</field>
+        <field name="arch" type="xml">
+            <tree string="Idea list">
+                <field name="MakinaErref"/>
+                <field name="MakinaMotaID"/>
+            </tree>
+
+        </field>
+    </record>
+
+<!-- Makinen leihoa -->
+    <record id="action_biki_show_makinak" model="ir.actions.act_window">
+        <field name="name">Makinen zerrenda</field>
+        <field name="res_model">biki.makina</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="biki_makina_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Makinak
+            </p>
+        </field>
+    </record>
+
+<!-- Makina multzoak (motaren arabera) erakusten ditue leihoa -->
+    <record id="biki_makina_makinamotak_filtroa" model="ir.actions.act_window">
+        <field name="name">Makinak</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">biki.makina</field>
+        <field name="view_mode">kanban,tree,form,activity</field>
+        <field name="context" eval="{'search_default_filter_to_availabe_pos': 1, 'default_available_in_pos': True}"/>
+    </record>
+
+<!-- Makinak menua -->
+    <menuitem id="menu_biki_makina_filtroa"
+        name="Makinak motaka"
+        action="biki_makina_makinamotak_filtroa"
+        parent="menu_biki_makinak_nagusia"
+        sequence="5"/>
+
+<!-- Makinak filtratuta (motaren arabera) menua -->
+    <menuitem id="menu_biki_makinak"
+        name="Makinak"
+        parent="menu_biki_makinak_nagusia"
+        action="action_biki_show_makinak"
+        sequence="10"/>
+
+</odoo>

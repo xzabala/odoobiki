@@ -52,7 +52,7 @@
 
     <menuitem id="menu_biki_egoerak"
         name="Egoerak"
-        parent="menu_biki_gordinak"
+        parent="menu_biki_datugordinak"
         action="action_biki_show_egoerak"
         groups="biki.biki_user_group"
         sequence="21"/>

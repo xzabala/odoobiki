@@ -4,22 +4,29 @@
     <menuitem
         id="menu_biki_root"
         name="Biki"
-        groups="biki.biki_user_group"
+        groups="biki.biki_user_group,biki.biki_admin_group"
         web_icon="biki/description/icon.png"
         sequence="10"/>
 
-    <!-- Biki gordinen menua -->
+    <!-- Biki makinen menu nagusia -->
     <menuitem
-        id="menu_biki_gordinak"
-        name="Datu Gordinak"
+        id="menu_biki_makinak_nagusia"
+        name="Makinak"
         parent="menu_biki_root"
         sequence="20"/>
 
+    <!-- Biki datu gordinen menua -->
+    <menuitem
+        id="menu_biki_datugordinak"
+        name="Datu Gordinak"
+        parent="menu_biki_root"
+        sequence="30"/>
+
     <!-- Konfigurazioko menu nagusia -->
-    <menuitem id="menu_biki_config"
+    <menuitem 
+        id="menu_biki_config"
         name="Konfigurazioa"
         parent="menu_biki_root"
-        sequence="110"
-        groups="biki.biki_user_group"/>
+        sequence="110"/>
 
 </odoo>

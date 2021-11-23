@@ -34,7 +34,7 @@
 
     <menuitem id="menu_biki_emaitzak"
         name="Emaitzak"
-        parent="menu_biki_gordinak"
+        parent="menu_biki_datugordinak"
         action="action_biki_show_emaitzak"
         groups="biki.biki_user_group"
         sequence="21"/>

@@ -19,7 +19,7 @@ class Egoera(models.Model):
     PosInicialCompletado = fields.Boolean ()
     SeleccionarProg = fields.Boolean ()
     CrearPrograma = fields.Boolean ()
-    NProgSeleccionado = fields.Integer()
+    NProgSeleccionado = fields.Many2one('biki.programa', string='Aukeratutako programa', index=True)
     HomeExt = fields.Boolean ()
     ResetAlarma = fields.Boolean ()
     GrabarPrograma = fields.Boolean ()

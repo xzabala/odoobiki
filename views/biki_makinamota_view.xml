@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="biki_makinamota_tree" model="ir.ui.view">
+        <field name="name">Biki makinan moten bista</field>
+        <field name="model">biki.makinamota</field>
+        <field name="arch" type="xml">
+            <tree string="Idea list">
+                <field name="MakinaMotaErref"/>
+                <field name="Izena"/>
+            </tree>
+
+        </field>
+    </record>
+
+    <record id="action_biki_show_makinamotak" model="ir.actions.act_window">
+        <field name="name">Makinaren totalen zerrenda</field>
+        <field name="res_model">biki.makinamota</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="biki_makinamota_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Makinen Motak
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_biki_makinamotak"
+        name="Makina motak"
+        parent="menu_biki_config"
+        action="action_biki_show_makinamotak"
+        groups="biki.biki_user_group"
+        sequence="21"/>
+</odoo>
