@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="biki_pieza_tree" model="ir.ui.view">
+        <field name="name">Piezen bista</field>
+        <field name="model">biki.pieza</field>
+        <field name="arch" type="xml">
+            <tree string="Idea list">
+                <field name="name"/>
+            </tree>
+
+        </field>
+    </record>
+
+    <record id="action_biki_show_piezak" model="ir.actions.act_window">
+        <field name="name">Pieza</field>
+        <field name="res_model">biki.pieza</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="biki_pieza_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Piezak
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_biki_piezak"
+        name="Makina motak"
+        parent="menu_biki_config"
+        action="action_biki_show_piezak"
+        groups="biki.biki_user_group"
+        sequence="21"/>
+</odoo>

@@ -7,15 +7,17 @@
         <field name="model">biki.makina</field>
         <field name="arch" type="xml">
             <tree string="Idea list">
-                <field name="MakinaErref"/>
-                <field name="MakinaMotaID"/>
+                <field name="name"/>
+                <field name="makinamota"/>
+                <field name="marka"/>
+                <field name="modeloa"/>
             </tree>
 
         </field>
     </record>
 
 <!-- Makinen leihoa -->
-    <record id="action_biki_show_makinak" model="ir.actions.act_window">
+    <record id="biki_makinak_view" model="ir.actions.act_window">
         <field name="name">Makinen zerrenda</field>
         <field name="res_model">biki.makina</field>
         <field name="view_mode">tree,form</field>
@@ -27,27 +29,30 @@
         </field>
     </record>
 
-<!-- Makina multzoak (motaren arabera) erakusten ditue leihoa -->
-    <record id="biki_makina_makinamotak_filtroa" model="ir.actions.act_window">
-        <field name="name">Makinak</field>
+ <!-- Makinak multzokatuta ikusteko leihoa -->
+    <record id="biki_makinakmotaka_view" model="ir.actions.act_window">
+        <field name="name">Makinak motaka</field>
+        <field name="res_model">biki.makinamota</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">biki.makina</field>
-        <field name="view_mode">kanban,tree,form,activity</field>
-        <field name="context" eval="{'search_default_filter_to_availabe_pos': 1, 'default_available_in_pos': True}"/>
+        <field name="view_mode">kanban,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Ez dago makina motarik
+            </p>
+        </field>
     </record>
 
-<!-- Makinak menua -->
-    <menuitem id="menu_biki_makina_filtroa"
+<!-- Makinak motaka multzokatuta menua -->
+    <menuitem id="menu_biki_makinak_multzoka"
         name="Makinak motaka"
-        action="biki_makina_makinamotak_filtroa"
         parent="menu_biki_makinak_nagusia"
+        action="biki_makinakmotaka_view"
         sequence="5"/>
 
-<!-- Makinak filtratuta (motaren arabera) menua -->
+<!-- Makinak menua -->
     <menuitem id="menu_biki_makinak"
-        name="Makinak"
+        name="Makina guzktiak"
         parent="menu_biki_makinak_nagusia"
-        action="action_biki_show_makinak"
+        action="biki_makinak_view"
         sequence="10"/>
-
 </odoo>

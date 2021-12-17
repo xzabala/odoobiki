@@ -5,8 +5,7 @@
         <field name="model">biki.makinamota</field>
         <field name="arch" type="xml">
             <tree string="Idea list">
-                <field name="MakinaMotaErref"/>
-                <field name="Izena"/>
+                <field name="name"/>
             </tree>
 
         </field>
