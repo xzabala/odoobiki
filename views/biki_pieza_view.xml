@@ -24,7 +24,7 @@
     </record>
 
     <menuitem id="menu_biki_piezak"
-        name="Makina motak"
+        name="Piezak"
         parent="menu_biki_config"
         action="action_biki_show_piezak"
         groups="biki.biki_user_group"

@@ -35,7 +35,7 @@ class Egoera(models.Model):
     MarchaExtActivada = fields.Boolean ()
     EmergenciaActiva = fields.Boolean ()
     EtapaActiva = fields.Boolean ()
-    
+    Exekuzioa = fields.Many2one('biki.exekuzioa', string='Exekuzioa', index=True)
     
     
     

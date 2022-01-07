@@ -3,7 +3,7 @@
 from odoo import models, fields
 
 
-class Emaitza(models.Model):
+class Exekuzioa(models.Model):
     _name = 'biki.emaitza'
     _description = 'Makina errealaren datuak kudeatzeko'
 
@@ -17,4 +17,7 @@ class Emaitza(models.Model):
     PosFinal = fields.Integer()
     CargaFinal = fields.Integer()
     TiempoCiclo = fields.Integer()
-    
+    makinamota = fields.Many2one('biki.makina', string='Makina', index=True,required=True)
+    makinamota = fields.Many2one('biki.programa', string='Programa', index=True,required=True)
+    makinamota = fields.Many2one('biki.pieza', string='Pieza', index=True,required=True)
+

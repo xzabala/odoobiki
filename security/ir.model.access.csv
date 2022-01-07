@@ -1,13 +1,13 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_egoera_rd,access.egoera,model_biki_egoera,biki_user_group,1,0,0,0
-access_emaitza_rd,access.emaitza,model_biki_emaitza,biki_user_group,1,0,0,0
+access_emaitza_rd,access.exekuzioa,model_biki_exekuzioa,biki_user_group,1,0,0,0
 access_lagina_rd,access.lagina,model_biki_lagina,biki_user_group,1,0,0,0
 access_makina_rd,access.makina,model_biki_makina,biki_user_group,1,0,0,0
 access_pieza_rd,access.pieza,model_biki_pieza,biki_user_group,1,0,0,0
 access_programa_rd,access.pograma,model_biki_programa,biki_user_group,1,0,0,0
 access_totala_rd,access.totala,model_biki_totala,biki_user_group,1,0,0,0
 access_egoera_wr,access.egoera,model_biki_egoera,biki_admin_group,1,1,1,1
-access_emaitza_wr,access.emaitza,model_biki_emaitza,biki_admin_group,1,1,1,1
+access_emaitza_wr,access.exekuzioa,model_biki_exekuzioa,biki_admin_group,1,1,1,1
 access_lagina_wr,access.lagina,model_biki_lagina,biki_admin_group,1,1,1,1
 access_makina_wr,access.makina,model_biki_makina,biki_admin_group,1,1,1,1
 access_makinamota_wr,access.makinamota,model_biki_makinamota,biki_admin_group,1,1,1,1

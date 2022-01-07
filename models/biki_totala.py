@@ -12,5 +12,6 @@ class Totala(models.Model):
     OkTotal = fields.Integer()
     NgTotal = fields.Integer()
     PorcFallos = fields.Integer()
+    Makina = fields.Many2one('biki.makina', string='Makina', index=True,required=True)
     
     

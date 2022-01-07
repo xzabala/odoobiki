@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="biki_emaitza_tree" model="ir.ui.view">
+    <record id="biki_exekukzioa_tree" model="ir.ui.view">
         <field name="name">Biki emaitzen bista</field>
         <field name="model">biki.emaitza</field>
         <field name="arch" type="xml">
@@ -20,9 +20,9 @@
         </field>
     </record>
 
-    <record id="action_biki_show_emaitzak" model="ir.actions.act_window">
+    <record id="action_biki_show_exekuzioak" model="ir.actions.act_window">
         <field name="name">Makinaren emaitzen zerrenda</field>
-        <field name="res_model">biki.emaitza</field>
+        <field name="res_model">biki.exekuzioa</field>
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="biki_emaitza_tree"/>
         <field name="help" type="html">
@@ -33,9 +33,9 @@
     </record>
 
     <menuitem id="menu_biki_emaitzak"
-        name="Emaitzak"
+        name="Exekuzioakk"
         parent="menu_biki_datugordinak"
-        action="action_biki_show_emaitzak"
+        action="action_biki_show_exekuzioak"
         groups="biki.biki_user_group"
         sequence="21"/>
 </odoo>
