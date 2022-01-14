@@ -7,10 +7,10 @@ class Totala(models.Model):
     _name = 'biki.totala'
     _description = 'Makinaren totalak'
 
-    NumTotal = fields.Integer(index=True,required=True)
+    id = fields.Integer(index=True,required=True)
     ContadorTotal = fields.Integer()
-    OkTotal = fields.Integer()
-    NgTotal = fields.Integer()
+    OKTotal = fields.Integer()
+    NGTotal = fields.Integer()
     PorcFallos = fields.Integer()
     Makina = fields.Many2one('biki.makina', string='Makina', index=True,required=True)
     
