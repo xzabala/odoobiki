@@ -19,7 +19,7 @@ class Exekuzioa(models.Model):
     PosFinal = fields.Double()
     CargaFinal = fields.Double()
     TiempoCiclo = fields.Double()
-    Makina = fields.Many2one('biki.makina', string='Makina', index=True,required=True)
-    Programa = fields.Many2one('biki.programa', string='Programa', index=True,required=True)
-    Pieza = fields.Many2one('biki.pieza', string='Pieza', index=True,required=True)
+ #   Makina = fields.Many2one('biki.makina', string='Makina', index=True,required=True)
+ #   Programa = fields.Many2one('biki.programa', string='Programa', index=True,required=True)
+ #   Pieza = fields.Many2one('biki.pieza', string='Pieza', index=True,required=True)
 

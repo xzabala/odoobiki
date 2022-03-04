@@ -34,7 +34,7 @@ class Egoera(models.Model):
     PrensadoEnCurso = fields.Bool()
     EjeNoReferenciado = fields.Bool()
     ReferenciadoActivado = fields.Bool()
-    Exekuzioa = fields.Many2one('biki.exekuzioa', string='Exekuzioa', index=True)
+ #   Exekuzioa = fields.Many2one('biki.exekuzioa', string='Exekuzioa', index=True)
     
     
     

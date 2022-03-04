@@ -8,7 +8,7 @@ class Makina(models.Model):
     _description = 'Makina bakoitzaren informazioa gordetzeko'
 
     name = fields.Char(size=20,string='Erreferentzia',index=True,required=True)
-    makinamota = fields.Many2one('biki.makinamota', string='Makina mota', index=True,required=True)
+#    makinamota = fields.Many2one('biki.makinamota', string='Makina mota', index=True,required=True)
     marka = fields.Char(size=20,string='Marka')
     modeloa = fields.Char(size=20,string='Modeloa')
 
