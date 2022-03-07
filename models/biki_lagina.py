@@ -8,10 +8,11 @@ class Lagina(models.Model):
     _description = 'Laginak gordetzeko'
 
     NumMuestra = fields.Integer(index=True,required=True)
-    ContadorTotal = fields.Integer()
-    OKTotal = fields.Integer()
-    NGTotal = fields.Integer()
-    PorcFallos = fields.Integer()
+    PosicionReal = fields.integer()
+    VelocidadReal = fields.integer()
+    VelocidadConsigna = fields.integer()
+    CargaReal = fields.integer()
+    CargaContacto = fields.integer()
     Egoera = fields.Many2one('biki.egoera', string='Egoera', index=True,required=True)
     Exekuzioa = fields.Many2one('biki.exekuzioa', string='Exekuzioa', index=True,required=True)
 
