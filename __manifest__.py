@@ -32,6 +32,7 @@
         'views/biki_view.xml',
         'views/biki_egoera_view.xml',
         'views/biki_exekuzioa_view.xml',
+        'views/biki_infoezezaguna_view.xml',
         'views/biki_lagina_view.xml',
         'views/biki_makina_view.xml',
         'views/biki_makinamota_view.xml',

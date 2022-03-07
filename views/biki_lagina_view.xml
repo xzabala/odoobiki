@@ -5,6 +5,7 @@
         <field name="model">biki.lagina</field>
         <field name="arch" type="xml">
             <tree string="Idea list">
+                <field name='NumMuestra'/>
                 <field name='PosicionReal'/>
                 <field name='VelocidadReal'/>
                 <field name='VelocidadConsigna'/>

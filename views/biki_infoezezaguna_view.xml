@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="biki_infoezezaguna_tree" model="ir.ui.view">
+        <field name="name">Biki informzioa ezezagnaren bista</field>
+        <field name="model">biki.infoezezaguna</field>
+        <field name="arch" type="xml">
+            <tree string="Idea list">
+                <field name='Gakoa'/>
+                <field name='Balioa'/>
+            </tree>
+
+        </field>
+    </record>
+
+    <record id="action_biki_show_infoezezagunak" model="ir.actions.act_window">
+        <field name="name">Makinaren informzio ezezagunaren zerrenda</field>
+        <field name="res_model">biki.infoezezaguna</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="biki_infoezezaguna_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Makinen informazio ezezagunak
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_biki_infoezezagunak"
+        name="infoezezagunak"
+        parent="menu_biki_datugordinak"
+        action="action_biki_show_infoezezagunak"
+        groups="biki.biki_user_group"
+        sequence="21"/>
+</odoo>
