@@ -5,32 +5,37 @@
         <field name="model">biki.programa</field>
         <field name="arch" type="xml">
             <tree string="Idea list">
-                <field name="NumPrograma"/>
-                <field name="TipoPrograma"/>
-                <field name="PosInicial"/>
-                <field name="PosComienzo"/>
-                <field name="PosFinal"/>
-                <field name="PosRefParada"/>
-                <field name="VelAproximacion"/>
-                <field name="VelContacto"/>
-                <field name="VelPrensado"/>
-                <field name="VelMaxima"/>
-                <field name="FuerzaMaxima"/>
-                <field name="RelacionFuerza"/>
-                <field name="DistanciaPrensado"/>
-                <field name="TiempoPrensado"/>
-                <field name="TiempoMantenimiento"/>
-                <field name="TiempoMaxPrensado"/>
-                <field name="SLAE"/>
-                <field name="SLAESup"/>
-                <field name="SLAEInf"/>
-                <field name="SPAS"/>
-                <field name="SPASSup"/>
-                <field name="SPASInf"/>
-                <field name="STAE"/>
-                <field name="STAESup"/>
-                <field name="STAEInf"/>
-            </tree>
+                <field name='NumPrograma'/>
+                <field name='TipoPrograma'/>
+                <field name='PosInicial'/>
+                <field name='PosComienzo'/>
+                <field name='PosFinal'/>
+                <field name='PosRefParada'/>
+                <field name='VelAproximacion'/>
+                <field name='VelContacto'/>
+                <field name='VelPrensado'/>
+                <field name='VelMaxima'/>
+                <field name='VelRetroceso'/>
+                <field name='VelHoming'/>
+                <field name='VelJogFast'/>
+                <field name='VelJogSlow'/>
+                <field name='FuerzaMaxima'/>
+                <field name='RelacionFuerza'/>
+                <field name='CargaContacto'/>
+                <field name='DistanciaPrensado'/>
+                <field name='TiempoPrensado'/>
+                <field name='TiempoMantenimiento'/>
+                <field name='TiempoMaxPrensado'/>
+                <field name='SLAE'/>
+                <field name='SLAESup'/>
+                <field name='SLAEInf'/>
+                <field name='SPAS'/>
+                <field name='SPASSup'/>
+                <field name='SPASInf'/>
+                <field name='SPAE'/>
+                <field name='SPAESup'/>
+                <field name='SPAEInf'/>
+           </tree>
 
         </field>
     </record>

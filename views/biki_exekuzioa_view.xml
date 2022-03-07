@@ -5,16 +5,17 @@
         <field name="model">biki.exekuzioa</field>
         <field name="arch" type="xml">
             <tree string="Idea list">
-                <field name="NumPrograma"/>
-                <field name="TipoPrograma"/>
-                <field name="Ok"/>
-                <field name="Ng"/>
-                <field name="ResulSPAS"/>
-                <field name="ResulSTAE"/>
-                <field name="PosContacto"/>
-                <field name="PosFinal"/>
-                <field name="CargaFinal"/>
-                <field name="TiempoCiclo"/>
+                <field name='NPrograma'/>
+                <field name='TipoPrograma'/>
+                <field name='OK'/>
+                <field name='NG'/>
+                <field name='ResulSPAS'/>
+                <field name='ResulSLAE'/>
+                <field name='ResulSTAE'/>
+                <field name='PosContacto'/>
+                <field name='PosFinal'/>
+                <field name='CargaFinal'/>
+                <field name='TiempoCiclo'/>
             </tree>
 
         </field>

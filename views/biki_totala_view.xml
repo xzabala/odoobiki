@@ -5,11 +5,10 @@
         <field name="model">biki.totala</field>
         <field name="arch" type="xml">
             <tree string="Idea list">
-                <field name="NumTotal"/>
-                <field name="ContadorTotal"/>
-                <field name="OkTotal"/>
-                <field name="NgTotal"/>
-                <field name="PorcFallos"/>
+                <field name='ContadorTotal'/>
+                <field name='OKTotal'/>
+                <field name='NGTotal'/>
+                <field name='PorcFallos'/>
             </tree>
 
         </field>
