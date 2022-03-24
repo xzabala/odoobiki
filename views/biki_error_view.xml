@@ -2,7 +2,7 @@
 <odoo>
     <record id="biki_error_tree" model="ir.ui.view">
         <field name="name">Biki erroreen bista</field>
-        <field name="model">biki_error</field>
+        <field name="model">biki.error</field>
         <field name="arch" type="xml">
             <tree string="Idea list">
                 <field name="ListoNuevoPrensado"/>

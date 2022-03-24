@@ -4,9 +4,9 @@ from xml.dom.minidom import Identified
 from odoo import models, fields
 
 
-class Egoera(models.Model):
-    _name = 'biki.egoera'
-    _description = 'Makina egoerak gordetzeko'
+class Error(models.Model):
+    _name = 'biki.error'
+    _description = 'Makina erroreak gordetzeko'
     
     id = fields.Integer(index=True,required=True)
     ListoNuevoPrensado = fields.Boolean()
@@ -16,7 +16,6 @@ class Egoera(models.Model):
     FasePrensado = fields.Boolean()
     FaseMantenimiento = fields.Boolean()
     FaseRetroceso = fields.Boolean()
-    GrabandoProg = fields.Boolean()
     ProgValidado = fields.Boolean()
     ModoJog = fields.Boolean()
     ParadaAnomalo = fields.Boolean()
@@ -28,14 +27,14 @@ class Egoera(models.Model):
     No_CI = fields.Boolean()
     GrabandoDatos = fields.Boolean()
     CeroRefAlcanzado = fields.Boolean()
-    MarchaExtActivada = fields.Boolean()
-    MarchaActivada= fields.Boolean()
+    MarchaActivada = fields.Boolean()
     EjeNoReferenciado = fields.Boolean()
     ReferenciadoActivado = fields.Boolean()
     CicloTerminado = fields.Boolean()
-    EstadoNodeRed = fields.Integer()
-    FaseNodeRed = fields.Integer()
-    Exekuzioa = fields.Many2one('biki.exekuzioa', string='Exekuzioa', index=True)
-    
+    NumeroPrograma = fields.Integer()
+    TipoPrograma = fields.Integer()
+    NumeroPieza = fields.Integer()
+    Error = fields.Boolean()
+    NumeroError = fields.Integer()    
     
     
