@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="biki_error_tree" model="ir.ui.view">
+        <field name="name">Biki erroreen bista</field>
+        <field name="model">biki_error</field>
+        <field name="arch" type="xml">
+            <tree string="Idea list">
+                <field name="ListoNuevoPrensado"/>
+                <field name="EnMarcha"/>
+                <field name="FaseAproximacion"/>
+                <field name="FaseContacto"/>
+                <field name="FasePrensado"/>
+                <field name="FaseMantenimiento"/>
+                <field name="FaseRetroceso"/>
+                <field name="ProgValidado"/>
+                <field name="ModoJog"/>
+                <field name="ParadaAnomalo"/>
+                <field name="ParadaSolicitada"/>
+                <field name="PosInicioCompletado"/>
+                <field name="Homing"/>
+                <field name="ParadaEmergencia"/>
+                <field name="RearmeSistema"/>
+                <field name="No_CI"/>
+                <field name="GrabandoDatos"/>
+                <field name="CeroRefAlcanzado"/>
+                <field name="MarchaActivada"/>
+                <field name="EjeNoReferenciado"/>
+                <field name="ReferenciadoActivado"/>
+                <field name="CicloTerminado"/>
+                <field name="NumeroPrograma"/>
+                <field name="TipoPrograma"/>
+                <field name="NumeroPieza"/>
+                <field name="Error"/>
+                <field name="NumeroError"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_biki_show_error" model="ir.actions.act_window">
+        <field name="name">Makinaren erroreen zerrenda</field>
+        <field name="res_model">biki.error</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="biki_error_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Makinen erroreak
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_biki_error"
+        name="erroreak"
+        parent="menu_biki_datugordinak"
+        action="action_biki_show_error"
+        groups="biki.biki_user_group"
+        sequence="21"/>
+</odoo>

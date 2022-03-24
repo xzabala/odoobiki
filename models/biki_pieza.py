@@ -7,7 +7,12 @@ class Pieza(models.Model):
     _name = 'biki.pieza'
     _description = 'Pizak gordetzeko'
     
-    name = fields.Char(size=20,string='Erreferentzia',index=True,required=True)
+    NumPieza = fields.Integer()
+    Altura = fields.Float()
+    Diametro = fields.Float()
+    Densidad = fields.Float()
+    Peso = fields.Float()
+    Material = fields.Char()
      
     
     

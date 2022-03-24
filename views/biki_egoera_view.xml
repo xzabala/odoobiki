@@ -28,6 +28,9 @@
                 <field name='EjeNoReferenciado'/>
                 <field name='ReferenciadoActivado'/>
                 <field name='CicloTerminado'/>
+                <field name="EstadoNodeRed"/>
+                <field name="FaseNodeRed"/>
+                <field name="Exekuzioa"/>
             </tree>
 
         </field>

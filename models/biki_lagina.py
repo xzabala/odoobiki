@@ -13,8 +13,8 @@ class Lagina(models.Model):
     VelocidadConsigna = fields.Float()
     CargaReal = fields.Float()
     CargaContacto = fields.Float()
-    Egoera = fields.Many2one('biki.egoera', string='Egoera', index=True,required=True)
-    Exekuzioa = fields.Many2one('biki.exekuzioa', string='Exekuzioa', index=True,required=True)
+    Egoera = fields.Many2one('biki.egoera', string='Egoera', index=True, required=True)
+    Exekuzioa = fields.Many2one('biki.exekuzioa', string='Exekuzioa', index=True, required=True)
 
     
     

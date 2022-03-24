@@ -31,6 +31,7 @@
         'views/templates.xml',
         'views/biki_view.xml',
         'views/biki_egoera_view.xml',
+        'views/biki_error_view.xml',
         'views/biki_exekuzioa_view.xml',
         'views/biki_infoezezaguna_view.xml',
         'views/biki_lagina_view.xml',

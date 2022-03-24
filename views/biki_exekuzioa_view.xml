@@ -14,7 +14,9 @@
                 <field name='ResulSTAE'/>
                 <field name='PosContacto'/>
                 <field name='PosFinal'/>
-                <field name='CargaFinal'/>
+                <field name="PosFinalNA"/>
+                <field name="CargaFinal"/>
+                <field name="CargaFinalNA"/>
                 <field name='TiempoCiclo'/>
             </tree>
 

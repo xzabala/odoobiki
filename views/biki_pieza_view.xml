@@ -5,9 +5,13 @@
         <field name="model">biki.pieza</field>
         <field name="arch" type="xml">
             <tree string="Idea list">
-                <field name="name"/>
-            </tree>
-
+                <field name="NumPieza"/>
+                <field name="Altura"/>
+                <field name="Diametro"/>
+                <field name="Densidad"/>
+                <field name="Peso"/>
+                <field name="Material"/>
+           </tree>
         </field>
     </record>
 
