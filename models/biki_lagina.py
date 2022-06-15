@@ -7,7 +7,7 @@ class Lagina(models.Model):
     _name = 'biki.lagina'
     _description = 'Laginak gordetzeko'
 
-    NumMuestra = fields.Integer(index=True,required=True)
+    NumMuestra = fields.Integer(index=True)
     PosicionReal = fields.Float()
     VelocidadReal = fields.Float()
     VelocidadConsigna = fields.Float()
